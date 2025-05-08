@@ -1,0 +1,15 @@
+name: firstworkflow
+on: workflow_dispatch
+jobs:
+   firstjob:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Print message
+          run: echo "Hello All"
+   secondjob:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run multiple commands
+          run:
+            echo "Hello from actions"
+            echo "Executed job1 of the workflow"
